@@ -1,0 +1,141 @@
+.sidebarCover {
+    width: 8.5%;
+    /* height: 100vh; */
+}
+
+@media only screen and (max-width: 650px) {
+    .sidebarCover {
+        display: none;
+    }
+}
+.errorMessage {
+    color: red;
+      text-align: left;
+      font-size: 10px;
+      margin-right: auto;
+  }
+/* quote-box */
+.bidInputText{
+    text-align: start;
+}
+.quoteBox {
+    width: 70%;
+    justify-content: center;
+    /* max-height: 40vh; */
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid #9e8959;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 70px auto 0;
+    padding: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .quoteBox {
+        max-height: auto;
+        padding: 20px;
+        /* margin-top: 20px; */
+    }
+}
+
+.quoteInnerBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  
+
+    gap: 10%;
+}
+.quoteInnerBoxButton {
+   margin-top: 10px;
+}
+@media only screen and (max-width: 650px) {
+    .quoteInnerBox {
+        flex-direction: column;
+    }
+}
+
+
+.bidInput {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+   flex-direction: column;
+   margin-top: 20px;
+    
+    width: 40%;
+    font-size: .4 rem;
+   
+}
+.bidInputWrap {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+   flex-direction: column;
+    
+    width: 40%;
+    font-size: .4 rem;
+
+}
+
+@media only screen and (max-width: 650px) {
+    .bidInput {
+        flex-direction: column;
+        width: 100%;
+    }
+    .bidInputWrap {
+       
+       flex-direction: column;
+        
+        width: 100%;
+        
+    
+    }
+}
+.bidInputBox[type="number"]::-webkit-outer-spin-button,
+.bidInputBox[type="number"]::-webkit-inner-spin-button {
+
+
+  -webkit-appearance: none;
+}
+.bidInputBox[type="number"] {
+    -moz-appearance: textfield;
+    height: 35px;
+  border: none;
+  border: 1px solid #CCCCCC;
+  
+border-radius: 3px;
+  outline:none;
+
+}
+.bidInputTextBox {
+
+    height: 100%;
+border-radius: 3px;
+  border: none;
+  border: 1px solid #CCCCCC;
+  outline:none;
+
+}
+@media only screen and (max-width: 650px) {
+    .bidInputBox {
+        width: 100%;
+        height: 5vh;
+        padding-right: 5px;
+    }
+    .bidInputTextBox {
+
+        height: 100%;
+        height: 5vh;
+        padding-right: 5px;
+    
+    }
+}
+
+

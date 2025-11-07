@@ -1,0 +1,60 @@
+.termscontainer {
+   
+    color: #262626;
+    padding: 65px;
+  }
+  .main{
+    
+  }
+  .termstitle h1{
+    font-size: 18px;
+   
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;  
+  }
+  
+  .termsbody h4 {
+    color: #EB573D;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  
+  .termsbody h3{
+   
+    color: #2b2727;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .termsbody p{
+    font-size: 14px;
+    line-height: 27px;
+  }
+  
+  .termsbody a{
+    color: #EB573D;
+  }
+  
+  .termsbody a:hover{
+    color: #EB573D;
+    text-decoration: none;
+  }
+  
+  .termsfooter h3 {
+    margin-top: 60px;
+    margin-bottom: 125px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #262626;
+  }
+  
+  .termsfooter h3 a:link {
+    color: #EB573D; 
+    text-decoration: none;
+  }

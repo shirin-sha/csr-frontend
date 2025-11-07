@@ -1,0 +1,19 @@
+.container{
+    padding:0rem 0rem 0rem 6rem;
+    overflow: visible !important;
+}
+
+@media screen and (max-width:800px) and (min-width:600px){  
+    
+    .container{
+        padding:2rem 1rem 0rem 1rem
+    }
+   
+}
+@media screen and (max-width:600px){  
+    
+    .container{
+        padding:1rem 1rem 0rem 1rem
+    }
+  
+}

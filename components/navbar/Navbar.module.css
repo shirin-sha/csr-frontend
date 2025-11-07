@@ -1,0 +1,223 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px 0; */
+    padding: 12px 0 6px 0;
+  }
+  .navbarLoopLogo {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+
+  }
+  .navbarLoopLogoSM {display: none;}
+  .navbarLogoSM image{
+    display: none;
+  }
+  .navbarMenu {
+    padding: 10px;
+    display: flex;
+    flex: 5;
+    justify-content: center;
+
+  }
+  .navbarMenuItemActive {
+    /* border-bottom: 1px solid #9e8959; */
+    padding: 0px 7px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #9e8959;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .navbarMenuItemArrow {
+    position: relative;
+    width: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .navbarMenuItemArrowImage {
+    object-fit: contain;
+    object-position: 0px 6px;
+  }
+  .navbarMenuItem {
+    padding: 0px 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbarMenuItem:hover{
+font-weight: 600;
+transform: scale(1.1);
+  }
+  /* .navbarMenuItem:hover{
+font-weight: 400;
+  } */
+  .btnContainer {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+  }
+  .signIn{
+    background-color: #9e8959;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: #9e8959;
+    font-size: 15px;
+    color: white;
+    cursor:pointer;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+  }
+  .signIn:hover{
+    background-color: #525151;
+    transform: scale(1.01);
+  }
+  .handburg{
+    display: none;
+  }
+  
+.hand{
+  font-size: 28px;
+}
+
+.toggle{
+  display: flex;
+  flex-direction: column;
+}
+.handDrop{
+  position: fixed;
+top: 0px;
+right: 0px;
+background-color: white;
+padding-left: 32px;
+width: 100%;
+z-index: 999;
+padding-right: 23px;
+padding-top: 12px;
+padding-bottom: 30px;
+}
+.dropLogo{
+  position: relative;
+  width: 30px;
+height: 30px;
+/* margin-bottom: 20px;
+padding: 29px; */
+cursor: pointer;
+padding-bottom: 90px;
+}
+.border{
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 5px;
+  font-size: 14px;
+  padding-top: 6px;
+}
+.homeborder{
+  border-top:1px solid #D9D9D9 ;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 5px;
+  font-size: 14px;
+  padding-top: 6px;
+  cursor: pointer;
+
+
+}
+.close{
+  text-align: right;
+  color: #9e8959;
+}
+.signinbtn{
+  color: white;
+background-color: #9e8959;
+border: none;
+padding: 7px 16px;
+text-align: center;
+margin-top: 12px;
+border-radius: 5px;
+font-size: 15px;
+transition: .5 ease-in;
+}
+.signinbtn:hover{
+  background-color: #525151;
+  
+}
+@media only screen and (max-width: 990px) and (min-width: 820px) {
+  .navbarMenuItem{
+    padding: 0;
+  }
+  .navbarMenu{
+    flex: 7 1;
+  }
+  .signIn{
+    padding: 5px 15px
+  }
+}
+@media only screen and (max-width: 820px){
+  .signIn{
+    padding: 7px 11px;
+font-size: 10px;
+  }
+  .navbarMenu{
+    font-size: 10px;
+    width: 60%;
+  }
+  .navbarMenuItem{
+    padding: 0;
+    font-size: 13px;
+  }
+  .navbarMenuItemActive{
+    font-size: 13px;
+    padding: 0;
+    margin: 0 5px;
+  }
+}
+@media (max-width: 768px) {
+  .signIn{
+    padding: 7px 11px;
+font-size: 10px;
+  }
+  .navbarMenu{
+    font-size: 10px;
+    width: 60%;
+    flex: 7 1;
+
+  }
+  .navbarMenuItem{
+    margin: 0 5px
+  }
+}
+  @media only screen and (max-width: 600px){
+      .navbarLoopLogoSM {display: block;}
+  .navbarLogoSM image{
+    display: block;
+   
+  }
+ 
+  .navbarLoopLogo{display: none;}
+    .handburg{
+      display: block;
+      color: white;
+      /* width: fit-content; */
+    }
+    .navbarMenu{
+      display:none
+    }
+    .btnContainer{
+      display: none;
+    }
+
+  }
+ 

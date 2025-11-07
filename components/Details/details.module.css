@@ -1,0 +1,721 @@
+.signinDiv {
+  background-color: #525251;
+  color: white;
+}
+
+.eventDetails {
+  padding: 30px 87px 90px 87px;
+  margin-left: 108px;
+  /* width: 100%; */
+  width: calc(100% - 108px);
+  box-sizing: border-box;
+}
+.buttonsWrapper {
+  display: flex;
+  gap: 10px;
+}
+.innerDiv {
+  width: 100%;
+  line-height: 48px;
+
+  font-size: 0.9rem;
+
+  padding-top: 41px;
+}
+
+.labelDiv {
+  width: 25%;
+  font-weight: 500;
+}
+
+.spanContent {
+  padding-left: 17px;
+  color: rgba(0, 0, 0, 0.58);
+}
+
+.docList {
+  /* padding-left: 17px; */
+  color: #9e8959;
+  min-width: 200px;
+  padding-right: 10px;
+}
+
+.eventTitle {
+  text-align: center;
+  /* padding-bottom: 60px; */
+  font-weight: 500;
+  position: relative;
+}
+
+.eventTitle::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid black;
+  left: 45%;
+  bottom: 0;
+  width: 10%;
+  height: 0px;
+}
+
+.eventName {
+  font-weight: 500;
+  padding-top: 35px;
+  position: relative;
+  width: max-content;
+}
+
+.eventName::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid black;
+  left: 1%;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+}
+
+.documentSection {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+  width: 50%;
+  color: rgba(0, 0, 0, 0.58);
+}
+
+.singleLineFlex {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* newadd */
+  /* justify-content: center; */
+}
+
+.documentButton {
+  display: flex;
+  /* width: 400px; */
+  justify-content: space-between;
+}
+.uploadBtn {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.viewButton {
+  width: 60px;
+  height: 26px;
+  background-color: #525251;
+  border: none;
+  color: white;
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.viewQuatation {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 53px;
+}
+
+.quatationBtn {
+  border: none;
+  background: #525151;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.qDetail {
+  padding-top: 30px;
+}
+.qDetail p {
+  line-height: 48px;
+}
+
+/* new */
+.budjetSection {
+  display: flex;
+  justify-content: center;
+  padding: 27px 27px;
+}
+.contantDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.linePara {
+  display: flex;
+  /* width: 295px; */
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.lineParastatus {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.nameStyle {
+  width: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.statusDiv {
+  display: flex;
+  width: 50%;
+}
+.closedStatus {
+  color: red;
+  width: 55%;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.activeStatus {
+  color: green;
+  width: 55%;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.docnameStyle {
+  width: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px
+}
+.nameStylestatus {
+  width: 57%;
+  font-weight: 500;
+  font-size: 20px;
+}
+.secondSec {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* padding-top: 25px; */
+  padding-bottom: 15px;
+}
+.dataStyle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+  width: 50%;
+
+  color: rgba(0, 0, 0, 0.58);
+}
+.outerDiv {
+  margin: auto;
+  width: 100%;
+  padding-top: 30px 30px;
+  transition: 0.4s ease;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  /* padding: 48px 70px; */
+  border-radius: 20px;
+  /* border-top: 6px solid #9e8959; */
+  padding: 30px 5rem;
+}
+.pagetitle {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.budgetTag {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+.budLabel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.sectionRight {
+  text-align: center;
+  padding-left: 90px;
+}
+.docSection {
+  /* width: 500px; */
+  /* margin: auto; */
+  display: flex;
+  padding-bottom: 40px;
+}
+.sectionDiv {
+  width: 50%;
+}
+.my_sponsor {
+  padding-bottom: 45px;
+}
+.bottomButton {
+  padding-top: 20px;
+  border-top: 1px solid #cccccc;
+  border-top: 1px solid #000000;
+}
+/* .bottomButton ::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    color: black;
+} */
+.viewQuatationDiv {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.viewQuatationDivMobile {
+   /* display: flex; */
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+}
+.messageBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.btn {
+  width: max-content;
+  height: 45px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 0.9rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s ease-in;
+}
+
+.btn:hover {
+  background: #9e8959;
+}
+.btn:focus {
+  background: #9e8959;
+}
+
+.btn_sm {
+  width: 74px;
+  height: 27px;
+  font-family: "Poppins";
+
+  font-size: 0.8rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 2px 8px 2px 8px;
+  transition: 0.4s;
+}
+
+.btn_sm:hover {
+  background: #9e8959;
+}
+
+.container {
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sponsorshipForm {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 3rem;
+  /* padding: 20px 50px; */
+  width: 100%;
+}
+
+.numberInput[type="number"]::-webkit-outer-spin-button,
+.numberInput[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.numberInputErr[type="number"]::-webkit-outer-spin-button,
+.numberInputErr[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.errorMessage {
+  color: red;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.numberInput[type="number"] {
+  -moz-appearance: textfield;
+  width: 110px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px solid;
+  outline: none;
+  margin-left: 20px;
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.numberInputErr[type="number"] {
+  -moz-appearance: textfield;
+  width: 100px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding-left: 10px;
+  border: 0px solid;
+  outline: 2px auto rgba(216, 32, 32, 0.719);
+  margin-left: 20px;
+  font-family: "Poppins";
+}
+.buttonGroup {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.singlebutton {
+  /* padding-top: 2rem; */
+  display: flex;
+  justify-content: center;
+}
+.buttonGroup2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* radio-button */
+
+.radioClassWrapper {
+  display: flex;
+}
+
+.radioButtonWrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.radioButton {
+  accent-color: #9e8959;
+  border: 2px;
+  width: 18px;
+  height: 1.2em;
+  margin: 0px 5px;
+}
+
+.checkboxWrapper {
+  /* display: flex; */
+  align-items: center;
+  padding-bottom: 14px;
+/*  */
+display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.checkboxWrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #D9D9D9;
+}
+
+.checkboxWrapper:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkboxWrapper input:checked ~ .checkmark {
+  background-color: #525251;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxWrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxWrapper .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkboxLabel {
+  padding-left: 10px;
+ 
+}
+
+.radioLabel {
+  margin-right: 10px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+
+
+
+.checkBox {
+    background: gray;
+  
+    accent-color: #9e8959;
+    border: none;
+  
+    width: 20px;
+    height: 1.5em;
+  border-radius: 0px;
+    /* margin: 0 !important; */
+    margin-left: 5px;
+  }
+.mySponsorshipCard {
+  margin-top: 20px;
+}
+.buttonCont{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.amountBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #9e8959;
+  margin-top: 20px;
+  padding: 17px 15px;
+}
+.sponsorBottonBtnRes{
+  display: none;
+}
+.messagebtnDivResponse{
+  display: none;
+}
+
+@media screen and (max-width:1052px) and (min-width:930px){
+  .outerDiv{
+    padding: 30px 1rem;
+  }
+}
+@media only screen and (max-width:930px) {
+  .outerDiv{
+    padding: 30px 1rem;
+  }
+  .nameStyle{
+    font-size: 14px;
+  }
+  .dataStyle{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .eventDetails{
+    width: 100%;
+    margin-left: 0;
+    padding: 30px 60px 90px 60px;
+  }
+  .outerDiv{
+    padding: 30px 1rem;
+  }
+}
+@media screen and (max-width:695px) and (min-width:600px){
+  .nameStyle{
+    font-size: 13px;
+  }
+  .dataStyle{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 650px) {
+.messagebtnDiv{
+  display: none;
+}
+.messagebtnDivResponse{
+  display: flex;
+}
+  .buttonsWrapper {
+    
+    min-width: 160px;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+  }
+  .labelDiv {
+    width: 50%;
+  }
+  .innerDiv {
+    width: 100%;
+    line-height: 31px;
+    font-size: 0.8rem;
+    padding-top: 31px;
+  }
+  .eventDetails {
+    padding: 12px 12px 112px 12px;
+    /* padding: 10px 20px; */
+    margin-left: 0;
+    width: 100%;
+  }
+  .bottomButton {
+    padding: 20px;
+    margin-left: 18px;
+    margin-right: 18px
+  }
+  .docList {
+    padding-right: 7px;
+    min-width: 0;
+  }
+  .documentButton {
+    flex-direction: column;
+  }
+  .outerDiv {
+    margin: 0;
+    width: 100%;
+    /* padding: 0; */
+    padding: 5px 30px;
+    box-shadow: none;
+  }
+  .budjetSection {
+    flex-direction: column;
+  }
+  .titleSection {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    padding-bottom: 16px;
+  }
+  .sectionRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+  }
+  .secondSec {
+    flex-direction: column;
+  }
+  .sectionDiv {
+    width: 100%;
+  }
+  .singleLineFlex {
+    width: 100%;
+    align-items: baseline;
+  }
+  .docnameStyle{
+    width: 50%;
+}
+.docSection{
+    padding-bottom: 10px;
+}
+.pagetitle{
+    padding-top: 30px;
+}
+.lineParastatus{
+  display: block;
+}
+.statusDiv{
+  width: 100%;
+  gap: 39px;
+  padding-bottom: 25px
+}
+.buttonCont{
+  width: 100%;
+  display: none;
+}
+.checkDiv{
+  padding-left: 20px;
+}
+.sponsorBottonBtnRes{
+  display: block;
+}
+.sidebarCover {
+  width: 0;
+}
+.endbtnLg{
+  display: none;
+}
+.viewQuatationDiv{
+  display: none;
+}
+.viewQuatationDivMobile{
+  display: flex;
+}
+.mobilebtn{
+  width: 100%;
+ margin-top: 10px;
+  height: 45px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 0.9rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+}
+@media only screen and (max-width: 475px) {
+  .amountBar {
+    flex-direction: column;
+    width: 100%;
+  }
+}

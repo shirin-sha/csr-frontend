@@ -1,0 +1,88 @@
+
+
+.sidebarFlex {
+  display: none;
+  /* display: flex; */
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  bottom: 0;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin-top: 89px;
+  height: 100px;
+}
+.sidebarFlexTop {
+  display: none;
+  /* display: flex; */
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  padding-top: 5px;
+
+
+  top:0;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+
+  margin-top: 89px;
+  height: 85px;
+}
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+}
+@media (min-width: 900px) {
+  .sidebarFlex,.sidebarFlexTop {
+    display: none;
+  }
+ 
+}
+.circle:hover {
+  background-color: #525251;
+  transform: translateY(2px);
+}
+
+.activeClass {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #525151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 31px;
+  color: #9e8959;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.iconTitle {
+  padding: 15px 0;
+  font-size: 0.7rem;
+}
+
+.childDiv {
+  width: 100%;
+  margin-top: 90px;
+}
+
+/* function bgColorSet() {
+  if (this.router.url.includes('/project')) {
+    this.className = styles.activeClass;
+  }
+} */

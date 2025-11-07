@@ -1,0 +1,316 @@
+.mainRow {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.inputGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.forgotForm {
+  background-color: white;
+  
+  border-radius: 16px;
+  /*
+  border-top: 6px solid #9e8959;
+  margin-top: 49px; */
+  margin: auto;
+  text-align: center;
+  /* margin-left: 43px; */
+  padding: 20px 100px;
+  box-sizing: border-box;
+}
+/* ////// users start  */
+.usersWrapper {
+  padding: 20px 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.usersSwitcherA,
+.usersSwitcherO,
+.usersSwitcherS {
+  display: flex;
+  font-size: 14px;
+  color: white;
+
+  transition: 0.5s ease;
+  width: 150px;
+  
+  height: 40px;
+  background: #525251;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  padding-top: 10px;
+}
+.usersSwitcherA {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.usersSwitcherO {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.usersSwitcherS {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.userSwitcherClickA,
+.userSwitcherClickO,
+.userSwitcherClickS {
+  display: flex;
+  font-size: 14px;
+  color: white;
+
+  transition: 0.5s ease;
+  width: 150px;
+  height: 40px;
+  background: #9e8959;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  padding-top: 10px;
+}
+.userSwitcherClickA {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.userSwitcherClickO {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+ 
+}
+.userSwitcherClickS {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+@media only screen and (max-width: 650px) {
+  .usersWrapper h6 {
+    padding: 5px 0;
+  }
+}
+
+/* ////// users swapper end */
+.loginBtn {
+  all: unset;
+  color: white;
+  background-color: #525251;
+  border: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 26px;
+  /* padding: 6px 30px 6px 30px; */
+  font-size: 17px;
+  font-weight: 402;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+
+.loginBtn:hover {
+  color: white;
+  background-color: #9e8959;
+}
+.emailInput {
+  border: 1px solid #CCCCCC;
+ /* border:1px solid #797575; */
+  /* border: 1px solid rgba(230, 7, 7, 0.02); */
+  /* box-shadow: 0 0 1pt 0.1pt #797575; */
+  padding: 5px 10px;
+  outline: none;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 14px;
+  width: 100%;
+  /* box-shadow: 0 0 5pt 0.5pt #D3D3D3; */
+height: 35px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.para {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.753);
+  padding-bottom: 20px;
+}
+.welcome {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 401;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+  font-size: 14px;
+}
+.signUp {
+  color: #9e8959;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.signUp :hover {
+  color: #ad8527;
+  font-weight: bold;
+}
+.checkRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  /* padding-top: 12px; */
+  color: rgba(0, 0, 0, 0.22);
+  /* align-items: first baseline; */
+  align-items: center;
+}
+.remember {
+  display: flex;
+  /* align-items: baseline; */
+  align-items: center;
+}
+.remember p {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.checkbox {
+  /* margin-left: 16px; */
+  cursor: pointer;
+}
+.textIcon {
+  display: flex;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.651);
+  font-size: 14px;
+  /* margin-bottom: 6px; */
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 4px;
+  flex-direction: column;
+  text-align: start;
+}
+.textIcon:focus-within {
+  outline-color: #434343;
+  outline-width: 2px;
+}
+.userImageWrap .lockImageWrap {
+  display: none;
+
+  position: relative;
+  aspect-ratio: 1/1;
+}
+.forgotPassword {
+  padding-left: 5px;
+  cursor: pointer;
+  color: #525251b2;
+}
+.forgotPassword :hover {
+  color: #222221b2;
+}
+.socialIconSize1 {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 183px;
+  text-align: center;
+  align-items: center;
+  padding-top: 23px;
+}
+.socialIconSize2 {
+  display: none;
+}
+.socialDiv {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errmsg {
+  text-align: left;
+  font-size: 12px;
+  color: red;
+  margin-top: .5px;
+  padding-left: 7px
+  
+}
+.catcherrmsg{
+  text-align: center;
+  font-size: 12px;
+  color: red;
+}
+.tokenValidationBox{
+  width: 100%;
+  height: max-content;
+  /* background-color: #8b8b8b8f; */
+  border-radius: 5px;
+
+}
+.tokenValidationMsg{
+  color: red;
+  font-size: 12px;
+}
+.tokenValidationMsgSuccess{
+  color: green;
+  font-size: 12px;
+
+}
+@media screen and (max-width: 1083px) {
+  .forgotForm {
+    padding: 25px 50px;
+    /* margin-left: 10px; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .forgotForm {
+    /* margin-left: 0px; */
+    padding: 25px 80px;
+  }
+}
+@media screen and (max-width: 505px) {
+  .forgotForm {
+    padding: 25px 30px;
+  }
+  .checkRow {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .usersSwitcherA,
+.usersSwitcherO,
+.usersSwitcherS  {
+    font-size: 12px;
+  }
+  .userSwitcherClickA,
+.userSwitcherClickO,
+.userSwitcherClickS {
+  font-size: 12px;
+
+}
+  .forgotForm {
+    /* margin-top: 0px;
+    margin-left: 0px; */
+  }
+  .socialIconSize1 {
+    display: none;
+  }
+
+  .socialIconSize2 {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 183px;
+    text-align: center;
+    align-items: center;
+    padding-top: 23px;
+  }
+  .account {
+    padding-top: 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .forgotForm {
+    padding: 25px 20px;
+  }
+  .para {
+    font-size: 12px;
+  }
+}

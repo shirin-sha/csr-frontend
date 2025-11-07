@@ -1,0 +1,203 @@
+.elipse {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  border: 8px solid rgb(222, 216, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elipse:hover {
+  border: 8px solid #9e8959;
+  transition: 1.6s;
+}
+.sectionGap{
+  padding-top: 100px;
+}
+.stepmain {
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin-top: 43px;
+  margin-bottom: 85px;
+  justify-content: center;
+}
+.substepdiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.h1 {
+  text-align: center;
+  line-height: 1;
+}
+.stepLine {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.lineGap {
+  margin-right: 7px;
+}
+.lineArrow {
+  padding-top: 8px;
+  margin-right: 7px;
+}
+.stepTitle {
+  font-weight: 600;
+  padding-top: 10px;
+}
+.stepContent {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+  color: #575757;
+  padding-left: 50px;
+  padding-right: 27px;
+}
+/* .readmore{
+    color: #C8982C;
+    font-size: 14px;
+    padding-top: 16px;
+}
+.readmore:hover{
+    text-decoration: underline;
+} */
+.lineCointainer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/lineDotted.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-position-x: left;
+  background-size: 20px;
+}
+.plain {
+  width: 100px;
+  height: 65px;
+  /* position: relative; */
+  margin-top: 6px;
+}
+.arrow {
+  /* background-image: url('../../public/assets/stepArrow.png'); */
+  position: relative;
+  width: 14px;
+  height: 12px;
+  margin-top: 34px;
+  padding-left: 6px;
+}
+.newHeading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.newHeadingInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newHeading h1 {
+    margin-bottom:10px;
+}
+.newHeading h2 {
+   
+  border-top: #9e8959 2px solid;
+  margin: 0;
+  color:#fff;
+  width:80%;
+}
+.howWorks{
+  position:relative; 
+  width:90%; 
+  margin: 0 auto; 
+}
+
+@media only screen and (max-width: 1024px){
+.howWorks{
+  width:72% ;
+}
+.stepContent{
+  padding-left: 0;
+  padding-right:0;
+}}
+@media only screen and (max-width: 850px){
+  .stepContent{
+    font-size: 12px;
+  }
+
+}
+@media only screen and (max-width: 750px){
+  .newHeadingInner{
+    font-size: 14px;
+  }
+  .plain{
+    display: none;
+  }
+  /* .lineCointainer{
+    background-image: none;
+  } */
+  .arrow{
+    display: none;
+  }
+/* .stepmain{
+  flex-direction: column;
+  margin-bottom: 0px;
+} */
+.substepdiv{
+  padding-bottom: 31px;
+}
+.newHeadingInner{
+  font-size: 13px;
+}
+.stepContent{
+  padding-left: 22px;
+  padding-right: 0;
+  font-size: 10px;
+
+}}
+
+@media only screen and (max-width: 600px){
+  .plain{
+    display: none;
+  }
+
+  .lineCointainer{
+    background-image: none;
+  }
+  .arrow{
+    display: none;
+  }
+.stepmain{
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+.substepdiv{
+  padding-bottom: 31px;
+}
+.newHeadingInner{
+  font-size: 13px;
+}
+.stepContent{
+  text-align: center;
+  padding-left: 80px;
+    padding-right: 80px;
+    font-size: 16px;
+}
+.sectionGap{
+  padding-top: 60px;
+}
+}
+@media only screen and (max-width: 442px){
+  .stepContent{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.mailPopup {
+    max-width: 40%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid #9e8959;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 50px auto;
+}
+
+@media only screen and (max-width:650px) {
+    .mailPopup {
+        max-width: 75%;
+        padding: 20px;
+    }
+}
+
+.activationLink {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.okayBtn {
+    background-color: #525251;
+    color: white;
+    padding: 7px 25px;
+    border: none;
+    margin-top: 10px;
+}

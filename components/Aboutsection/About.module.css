@@ -1,0 +1,220 @@
+.chooseUs{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.whyChoose{
+    color: #9e8959;
+    font-weight: 500;
+    font-size: 19px;
+    padding-top: 26px;
+}
+.headline{
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 110%;  
+}
+.details{
+    /* width: 450px; */
+    font-size: 16px;
+    padding-top: 12px;
+    color: #7e7e7e;
+    /* padding-right: 200px; */
+}
+/* .margin{ 
+    margin: 0;
+} */
+.raiseFund{
+    padding-top: 31px;
+}
+.millionFund{
+    padding-top: 31px;
+}
+.tickCircle{
+    background-color: #9e8959;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.point{
+    display: flex;
+    padding-top: 25px;
+}
+.Highest{
+    padding-left: 16px;
+}
+.highestTitle{
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+.content{
+    width: 40%;
+}
+.subcontent{
+    font-size: 12px;
+    padding-top: 13px;
+}
+.readMore{
+    background-color: #525251;
+    width: fit-content;
+    color: #fff;
+    padding: 7px 17px;
+    margin-left: 36px;
+    margin-top: 10px;
+    border-radius: 5px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+.image{
+    width: 342px;
+    height: 497px;
+    position: relative;
+}
+    
+    .imageSm{
+        width: 241px;
+        height: 269px;
+        position: relative;
+        margin-top: 73px;
+        border-right: 10px solid white;
+         }
+
+    .imageGallery{
+        display: flex;
+        width: 60%;
+        padding-left: 26px;
+    }
+    .imgdiv{
+        background-color: #9e8959;
+        width: 288px;
+        height: 141px;
+        border: 9px solid white;
+        border-left: 0px;
+        position: relative;
+        z-index: 1;
+        margin-right: -52px;
+        opacity: 0.9;
+        background-image: url("../../images/25years.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 23px;
+        margin-left: -5px;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 1024px) {
+        
+        .whyChoose{
+            font-size: 16px;
+        }
+        .headline{
+            font-size: 24px;
+        }
+        
+        .details{
+            font-size: 12px;
+            padding-right: 138px;
+        
+        }
+        .highestTitle{
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 840px){
+        /* .chooseUs{
+            flex-direction: column;
+            padding-left: 40px;
+           padding-right: 40px;
+        } */
+        .whyChoose{
+        font-size: 16px;
+    }
+    .highestTitle{
+        font-size: 16px;
+    }
+    .details{
+        padding-right: 80px
+    }
+}
+    @media only screen and (max-width: 750px){
+        .whyChoose{
+            font-size: 16px;
+        }
+        .headline{
+            font-size: 20px;
+        }
+        .details{
+            padding-right:0;
+            font-size: 12px;
+        }
+        .highestTitle{
+            font-size: 15px;
+        }
+        .subcontent{
+            font-size: 11px;
+padding-top: 10px;
+        }
+        .stepContent{
+            padding-left: 140px;
+            padding-right: 140px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .chooseUs{
+            flex-direction: column;
+        }
+        .whyChoose{
+            text-align: center;
+            padding-top: 60px;
+        }
+        .content{
+            width: 100%;
+        }
+.yChoose{
+    font-size: 14px;
+}
+.headline{
+    text-align: center;
+    font-size: 21px;
+}
+.details{
+    padding-left: 70px; 
+     padding-right: 70px; 
+    font-size: 16px;  
+}
+.highestTitle{
+    font-size: 14px;
+    
+}
+.readMore{
+    margin-bottom: 30px;
+}
+.imageGallery{
+    width: 100%;
+    padding-left: 0;
+}
+
+    }
+
+    @media only screen and (max-width: 420px){
+        .details{
+            padding-left: 0; 
+             padding-right: 0; 
+        
+        } 
+    }

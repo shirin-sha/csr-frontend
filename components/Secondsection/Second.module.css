@@ -1,0 +1,188 @@
+.main 
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -129px;
+  margin-bottom: 90px;
+}
+.userdiv 
+{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 17px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 999;
+  /* background-color: rgb(130, 136, 136); */
+  
+}
+.subuserdiv 
+{
+ border-radius: 10px;
+  background: white;
+  border: 1px solid;
+    border-color: lightgray;
+    padding: 30px 10px 30px 30px;
+    cursor: pointer;
+}
+.typeUser{
+  font-size: 16px;
+}
+.subuserdiv:hover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /* background-image: url("../../images/register.png"); */
+    color: white;
+    background-color:#525251;
+    text-decoration: none;
+    transition: 1.6s;
+
+}
+.circleIcon 
+{
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: #9e8959 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+/* .circleIcon:hover{
+  background-color: white;
+  background-image: none;
+} */
+.iconDiv 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.Persondiv
+{
+   background-color: white;
+  
+}
+.description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  padding-top: 8px;
+}
+.registerNow{
+  font-size: 14px;
+    font-weight: 600;
+    background-color: #9e8959;
+    border: none;
+    color: white;
+    width: 133px;
+height: 40px;
+border-radius: 10px;
+margin-top: 21px;
+line-height: 21px;
+    /* padding-top: 10px */
+}
+.exploreButtonArrow {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  /* padding: 5px; */
+  margin-left: 10px;
+  border: 1px solid;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  margin-top: 9px;
+}
+.registerdiv{
+  display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.footerbackground{
+  /* background-image: url('../../public/assets/footerimg.jpeg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: contain; */
+  background-position: center;
+  background-image:
+  linear-gradient(to bottom, #525251, rgba(82, 82, 81, 0.89)),
+  url('../../images/footerimg.jpeg');
+}
+
+ .PersonIcon{
+  color: white;
+  width: 45px;
+    height: 26px;
+    background-image: none;
+} 
+.userdiv :hover .PersonIcon{
+  color: #9e8959;
+}
+.userdiv :hover .circleIcon{
+  background-color: white;
+}
+
+/* @media only screen and (max-width: 899px) and (min-width:849px){
+  .main{
+    margin-top: -107px;
+  }
+} */
+/* @media only screen and (max-width: 849px) and (min-width:840px){
+  .main{
+    margin-top:-90px;
+  }
+} */
+/* @media only screen and (max-width: 737px) and (min-width:600px){
+  
+    .main{
+      margin-top: 134px;
+    }
+  } */
+@media only screen and (max-width: 730px){
+.subuserdiv{
+  padding: 25px;
+}
+.typeUser{
+  font-size: 14px;
+}
+.description{
+  font-size: 10px;
+}
+}
+@media only screen and (max-width: 629px) and (min-width:600px){
+  .main{
+    margin-top: -132px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .main {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .userdiv{
+    grid-template-columns: none
+  }
+  .subuserdiv{
+    margin-top: 9px;
+  }
+  .description{
+    font-size: 15px;
+    
+  }
+  .typeUser{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .registerNow{
+    font-size: 16px;
+      font-weight: 600;
+      /* padding-top: 10px */
+  }
+}

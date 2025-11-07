@@ -1,0 +1,429 @@
+
+.modalWRapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  align-items: center;
+  
+ 
+  z-index: 99;
+}
+.formDiv {
+  display: flex;
+  margin: auto;
+  width: 640px;
+  padding-top: 30px ;
+}
+.createEvent {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* padding: 48px 70px; */
+  border-radius: 16px;
+  border-top: 6px solid #9e8959;
+}
+.fileDiv {
+  width: 100%;
+  
+}
+.selectBox{
+  width: 100%;
+    height: 35px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+}
+.newEventTitle {
+  text-align: center;
+  /* padding-bottom: 27px; */
+}
+.flexMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+ 
+}
+.dobcalDiv{
+  display: flex;
+    position: relative;
+    width: 50%;
+}
+.dob{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  outline:none;
+  /* color: transparent; */
+}
+
+
+ .dob::-webkit-calendar-picker-indicator{
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.calenderIcon{
+  position: absolute;
+    right: 5px;
+    top: 7px;
+    pointer-events: none;
+}
+.toDate{
+  font-size: 14px;
+    padding: 7px;
+}
+.errorMessage {
+  color: red;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+.dateDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.textspan {
+  width: 100%;
+  text-align: start;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.inputtext {
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  outline:none;
+}
+.textOnlyInput {
+  background: #f5f5f5;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  /* margin-top: 12px; */
+  padding: 8px;
+}
+.textLabel {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  width: 45%;
+  flex-direction: column;
+}
+
+.childMargin {
+  margin-left: 108px;
+  width: 100%;
+  padding: 49px 80px 49px 73px;
+}
+.signinDiv {
+  background-color: #525251;
+  color: white;
+}
+.searchBox {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.61);
+  border-radius: 4px;
+  padding: 6px;
+  padding-left: 38px;
+}
+.searchIcon {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+.flexDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.btnDiv {
+  margin-top: 19px;
+}
+.createBtn {
+  border: none;
+  background-color: #525251;
+  padding: 12px;
+  color: white;
+  border-radius: 4px;
+}
+.createBtn:hover {
+  background-color: #9e8959;
+}
+/* popup */
+
+.flexContent1 {
+  width: 60%;
+}
+
+.textOnly {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 40%;
+}
+.browseButtonWrap {
+  display: flex;
+  
+  background: #ffffff;
+  position: relative;
+  padding: 6px 4px;
+  box-shadow: 0 0 1pt 0.5pt #d3d3d3;
+  /* width: 92%;
+  margin-top: 4px;
+  padding: 8px; */
+}
+/* .fileDiv{
+      width: 40.5%;
+    } */
+.browseButtonWrap::after {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  content: "Browse";
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #9e8959;
+  outline: none;
+  border: none;
+  padding: 7px 4px;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: 0;
+  pointer-events: none;
+}
+/* .customFileInput {
+  color: transparent;
+} */
+
+.customFileInput::-webkit-file-upload-button,
+.customFileInput::file-selector-button {
+  visibility: hidden;
+}
+.payAndPublish {
+  background-color: #9e8959;
+  cursor: pointer;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+height: 35px;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  font-size: 14px;
+  border: 1px solid #9e8959;
+  transition: .5s ease;
+}
+.payAndPublish:hover {
+  background-color: #525251;
+  border: 1px solid #525251;
+  transform: scale(1.01);
+}
+.buttonFlex {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  /* margin-top: 30px; */
+}
+
+.cardDiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 60px;
+  margin-top: 48px;
+}
+.singleLine {
+  display: flex;
+}
+.eventlabel {
+  width: 101px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* file */
+.fileSelection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 4px;
+
+  position: relative;
+}
+.fileSelection .browseButtonWrap {
+  display: flex;
+  justify-content: right;
+  background: #f5f5f5;
+}
+.fileSelection .browseButtonWrap span {
+  color: #fff;
+  background-color: #9e8959;
+  outline: none;
+  border: none;
+  padding: 6px 4px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.close {
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.spacing {
+  padding: 40px 40px;
+}
+.catchErr{
+  text-align: center;
+    color: red;
+    padding-top: 15px;
+}
+
+
+.accept {
+  display: flex;
+  margin-top: 45px;
+
+  align-items: center;
+  justify-content: center;
+}
+.checkBox {
+  width: 15px;
+  height: 15px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accept input {
+  cursor: pointer;
+  display: none;
+}
+.accept p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+.accept span {
+  color: #9e8959;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.acceptError {
+  width: 100%;
+  color: red;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 650px) {
+  .createEvent {
+    width: 100%;
+    padding: 11px 18px;
+    top: 255px;
+    left: 37px;
+  }
+  .dobcalDiv{
+    width: 43%;
+  }
+  .spacing {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .flexDiv {
+    flex-direction: column;
+    width: auto;
+    left: 30px;
+  }
+  /* form */
+  .flexMain {
+    flex-direction: column;
+  }
+  .flexContent1 {
+    width: 100%;
+  }
+  .textLabel {
+    flex-direction: column;
+    width: 100%;
+  }
+  .inputtext {
+    width: 100%;
+    margin-right: 0;
+  }
+  .textOnly {
+    width: 100%;
+    padding-left: 0;
+  }
+  .browseButtonWrap {
+    width: 100%;
+  }
+ 
+  .buttonFlex {
+    justify-content: center;
+  }
+  .cardDiv {
+    background: white;
+    top: 249px;
+    left: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .textspan {
+    width: 100%;
+    padding: 8px;
+  }
+  .textOnlyInput {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .fileDiv {
+    width: 100%;
+  }
+  .dateDiv{
+    justify-content: space-between;
+  }
+  .formDiv {
+    padding-top: 70px;
+    width: unset;
+  }
+  .payAndPublish {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px)  {
+  
+  .form {
+    display: flex;
+   
+    gap: 2px;
+    row-gap: 5px;
+  }
+}

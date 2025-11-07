@@ -1,0 +1,42 @@
+.sidebarFlex{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 112px;
+    padding: 78px 20px
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover{
+    background-color: #525251;
+}
+.icon{
+    font-size: 31px;
+    color: #9e8959;
+}
+.wrap{
+    text-align: center;
+    background-color: black;
+}
+.wrap:focus-within{
+    text-align: center;
+    background-color: black;
+}
+.active{
+    background-color: black;
+}
+.iconTitle{
+    padding: 15px 0;
+}
+@media screen and (max-width: 650px){
+    .sidebarFlex{
+        display: none;
+    }   
+}

@@ -1,0 +1,203 @@
+/* .reviewBox{ */
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding-top: 45px; */
+
+/* } */
+
+.reviewSingle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    text-align: center;
+    position: relative;
+    
+}
+.goldLine{
+    position: absolute;
+    top: 7px;
+left: 8px;
+}
+.bottomline{
+    position: absolute;
+    bottom: 5px;
+right: 7px;
+}
+.reviewSingle:hover{
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+.innerContent{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.userReview{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: #3b3b3b;
+    color: white;
+    /* padding: 30px; */
+    font-size: 12px;
+    word-spacing:3px;
+    position: relative;
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 24px;
+    margin: 0 10px
+
+}
+.bgContainer{
+background-color:rgba(158, 137, 89, 0.11);
+padding-top: 52px;
+padding-bottom: 118px;
+/* padding-right: 118px;
+    padding-left: 118px; */
+}
+.profile{
+    width: 38px;
+    height: 38px;
+    position: relative;
+    /* margin-top: -19px; */
+    padding: 10px;
+}
+
+.profileBorder{
+    
+    border: 1px solid #9e8959;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 48px;
+    margin-top: -25px;
+}
+.star{
+    color: #9e8959;
+    width: 20px;
+
+      height: 30px;
+}
+.ceo{
+    font-size: 11px;
+    color: #9e8959;
+}
+.quotes{
+    position: absolute;
+    display: flex;
+    font-size: 32px;
+    color: #2b2717;
+}
+
+.bgText {
+    background-color: #aaa;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+.bgText::after {
+    color: #000;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 80px;
+    line-height: 1;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+.headDiv{
+    display: inline-block;
+}
+.blurText{
+    color: rgba(0, 0, 0, 0.02);
+    margin-top: -58px;
+    font-size: 52px;
+    padding-left: 281px;;
+  
+}
+.blur::before{
+    content: 'TESTIMONIAL';
+    position: absolute;
+    left: 209px;
+    top: -46px;
+    color: rgba(0, 0, 0, 0.02);
+    font-size: 82px;
+    /* color: rgba(0, 0, 0, 0.02); */
+}
+.blur{
+    position: relative;
+}
+.flexContainer{
+    display: flex;
+}
+@media only screen and (max-width: 1024px){
+    .blur::before{
+        font-size: 52px;
+        left: 233px;
+        top: -20px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .userReview{
+        padding-right: 14px;
+        padding-left: 18px;
+        font-size: 10px;
+    }
+    
+}
+@media only screen and (max-width: 750px){
+    .blur{
+        font-size: 23px;
+    }
+    .blur::before{
+        font-size: 32px;
+        top: -11px;
+    }
+    .userReview{
+        font-size: 10px;
+    }
+    }
+@media only screen and (max-width: 600px){
+    .bgContainer{
+        padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+padding-bottom: 16px;
+    }
+
+    .blur{
+        text-align: center;
+        font-size: 22px;
+        margin-top: 31px;
+        }
+        
+        .blur::before{
+        content: 'TESTIMONIAL';
+        position: absolute;
+        left: 48px;
+        top: -23px;
+        color: rgba(0, 0, 0, 0.02);
+        font-size: 35px;
+        }
+        .flexContainer{
+            justify-content: center;
+        }
+        /* .userReview{
+            margin-left: 86px;
+            margin-right: 86px;
+        } */
+        .innerContent{
+            font-size: 15px;
+        }
+}
+@media only screen and (max-width:500){}
+@media only screen and (max-width: 460px){
+    .userReview{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

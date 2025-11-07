@@ -1,0 +1,94 @@
+.Question {
+  display: flex;
+  position: relative;
+  background: rgba(217, 217, 217, 0.57);
+  padding: 20px 51px 20px 94px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin-top: 57px; */
+  margin: 30px 0px;
+}
+.addIcon {
+  position: absolute;
+  width: 70px;
+  height: 66px;
+  background-color: #9e8959;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 33px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.iconPlusOrMinus {
+  position: relative;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.minusIcon {
+  position: absolute;
+  width: 70px;
+  height: 66px;
+  background-color: #9e8959;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 33px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.plusDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+
+  margin-bottom: 12px;
+}
+.plusContent {
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 99px;
+  }
+@media only screen and (max-width: 600px) {
+  .Question {
+    font-size: 15px;
+    margin: 20px 0px;
+  }
+  .addIcon {
+    height: 62px;
+    width: 66px;
+  }
+  .minusIcon {
+    height: 58px;
+    width: 66px;
+  }
+  .plusContent{
+    padding-right: 0;
+    font-size: 10px;
+  
+  }
+}
+@media only screen and (max-width: 355px) {
+  .Question {
+    padding: 11px 51px 11px 94px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .Question {
+    padding: 2px 51px 2px 94px;
+  }
+}

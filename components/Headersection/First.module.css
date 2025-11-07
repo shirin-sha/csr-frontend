@@ -1,0 +1,305 @@
+.banner{
+filter: grayscale(50%);
+background-repeat: no-repeat;
+position: relative;
+
+min-height: 100vh;
+display: grid;
+align-items: end;
+}
+
+.sliderimage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.bannerMain{
+  display :flex;
+}
+.gridItem {
+ justify-self: stretch;
+
+ width: 100%;
+}
+.bannerContent{
+ 
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -200px;
+    /* width: 66%; */
+    /* padding-right: 158px;
+    position: absolute;
+    bottom: 345px; */
+    
+}
+.largeContent{
+    /* font-size: 38px; */
+    line-height: 1;
+    margin-top: 10px;
+    /* width: 40%; */
+    /* font-weight: 500; */
+
+}
+.headContent{
+    margin-top: 0;
+    margin-bottom: 0;
+font-weight: 700;
+
+font-size: 50px;
+
+}
+.loopAgency{
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 6px;
+}
+.smallContent{
+    font-size: 16px;
+    font-weight: 500;
+    /* padding-right: 175px; */
+    padding-top: 20px;
+    line-height: 120%;
+    max-width: 428px;
+
+}
+.exploreButton{
+    display: flex;
+    align-items: center;
+  background-color: white;
+  color: #434343;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 12px 25px;
+    
+    border: 1px solid white;
+    margin-top: 20px;
+    /* background: linear-gradient(to right, #C8982C 50%, #525251 50%); */
+   
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 1.6s;
+    line-height: 30px;
+}
+.exploreButton:hover{
+    background-color:#525151 ;
+    color: white;
+    
+}
+.exploreButtonArrow {
+    display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  margin-left: 10px;
+  }
+  .arrowicon{
+    color: #9E8959;
+  }
+  .personImage{
+  
+    padding-left: 94px;
+  }
+  @media only screen and (max-width: 1140px){
+    .loopAgency{
+      font-size: 18px;
+  }
+  .headContent{
+      font-size: 32px;
+      
+    }
+  }
+  @media only screen and (max-width: 780px){
+    .loopAgency{
+      font-size: 15px;
+    }
+    .headContent{
+      font-size: 22px;
+    }} 
+@media only screen and (max-width:680px){
+  /* .banner{
+    padding-bottom: 155px;
+  } */
+}
+
+  @media only screen and (max-width: 600px){
+    .banner {
+      min-height: auto;
+    }
+    .bannerMain{
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    .exploreButton{
+      font-size: 16px;
+    }
+    .loopAgency{
+        font-size: 15px;
+font-weight: 483;
+    }
+    .headContent{
+        font-size: 20px;
+        width: 76%;
+     font-weight: 500;
+    }
+   
+    .bannerContent{
+        padding-top: 58px;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 56px;
+        top: 0;
+    }
+    .smallContent{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    .banner{
+      background-size: cover;
+      padding-top: 56px;
+      padding-bottom:0;
+    }
+   
+  } 
+  
+  /* @media only screen and (max-width: 1441px) {
+    .bannerContent{
+      padding-right: 0px;
+  }
+  .bannerMain{
+    padding-bottom: 13px;
+  }}
+ 
+  
+  @media only screen and (max-width: 1140px){
+    .bannerContent{
+      padding-right: 0px;
+    }
+    .loopAgency{
+        font-size: 18px;
+    }
+    .headContent{
+        font-size: 32px;
+        
+      }
+      .smallContent{
+        padding-right: 0;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .bannerMain{
+      padding-bottom: 28px;
+    }
+  }
+  @media only screen and (max-width: 953px){
+    .bannerContent{
+     
+      padding-right: 0;
+  }
+  .bannerMain{
+    padding-bottom: 60px;
+  }
+  .banner{
+
+    
+    padding-bottom:62px
+  }
+  
+  }
+ 
+  @media only screen and (max-width: 900px){
+ 
+.banner{
+
+    
+  padding-bottom:15px
+}
+}
+  @media only screen and (max-width: 840px){
+    .loopAgency{
+        font-size: 16px;
+      }
+      .headContent{
+        font-size: 30px;
+       
+      }
+   
+    .bannerMain{
+      padding-bottom: 105px;
+    }
+    .personImage{
+      padding-top: 147px!important;
+    }
+  }
+  @media only screen and (max-width: 780px){
+    .loopAgency{
+      font-size: 15px;
+    }
+
+  
+
+    .headContent{
+      font-size: 22px;
+    }
+    .bannerMain{
+      padding-bottom: 126px;
+    }
+    .personImage{
+      margin-bottom: -23px;
+      padding-top: 84px;
+    }
+    .banner{
+
+    
+      padding-bottom:20px
+  }
+  }
+ 
+  @media only screen and (max-width: 600px){
+    .bannerMain{
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    .exploreButton{
+      font-size: 16px;
+    }
+    .loopAgency{
+        font-size: 15px;
+font-weight: 483;
+    }
+    .headContent{
+        font-size: 20px;
+        width: 76%;
+     font-weight: 500;
+    }
+   
+    .bannerContent{
+        padding-top: 90px;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .smallContent{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    .personImage{
+      padding-top: 0px!important;
+      margin-bottom: -7px;
+      padding-left: 0;
+    }
+    .banner{
+      padding-top: 56px;
+      padding-bottom:0;
+    }
+   
+  } */

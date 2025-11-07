@@ -1,0 +1,215 @@
+.popupWrap {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url("../../../images/bgImage.jpeg");
+    background-repeat: no-repeat; */
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index:99;
+  }
+  .bgImgadd{
+    background-image: url("../../images/bgImage.jpeg");
+    background-repeat: no-repeat;
+  }
+  .closeButtonWrap {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .closeButton {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .boxBig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .boxSmall {
+    background: #fff;
+    border-radius: 3px;
+    border-top: 6px solid #9e8959;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .actionButtions{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .actionButtionWrap{
+    margin:0px 5px;
+   
+
+  }
+  .actionButtionWrap button{
+    cursor: pointer;
+  }
+  .handSignalWrap {
+    position: relative;
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin-top: 15px;
+  }
+  .popUpMainImage {
+    position: relative;
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+  .specificEmail {
+    color:#9e8959;
+  }
+  
+  /* other styles */
+  
+  .newHeading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .newHeadingInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .newHeading h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+  }
+  .newHeading h2 {
+    border-top: #9e8959 2px solid;
+    margin: 0;
+    color: #fff;
+    width: 80%;
+  }
+  
+  .prompt {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.68);
+  }
+  .prompt span{
+    color:#9e8959;
+  }
+  .message {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.58);
+    padding-top: 20px;
+  }
+  .submitWrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .submitWrap input[type="submit"] {
+    padding: 10px 40px;
+    color: #fff;
+    background: #525251;
+    outline: none;
+    border: 1px solid #525251;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .innerCloseWrap {
+    display: none;
+  }
+  .gotoEmail {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.58);
+    padding-top: 20px;
+    cursor:pointer
+  }
+  .resendEmail{
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.58);
+    padding-top: 10px;
+    cursor:pointer
+  
+  }
+  .resendEmail:hover, .gotoEmail:hover{
+    color: #C8982C;
+  }
+  @media screen and (max-width: 560px) {
+    .prompt {
+      font-size: 14px;
+  
+      margin-top: 10px;
+    }
+    .closeButtonWrap {
+      display: none;
+    }
+    .boxBig {
+      width: 80%;
+    }
+    .boxSmall {
+      width: 100%;
+    }
+    .handSignalWrap {
+      position: relative;
+      width: 70px;
+      aspect-ratio: 1/1;
+      /* margin-top: 10px; */
+    }
+    .innerCloseWrap {
+      display: block;
+      position: absolute;
+      width: 30px;
+      right: 0px;
+      top: 15px;
+    }
+    .popUpMainImage {
+      position: relative;
+      width: 70px;
+      aspect-ratio: 1/1;
+    }
+    .newHeading h1 {
+      margin-bottom: 5px;
+      font-size: 25px;
+      font-weight: 500;
+      color: #000000;
+    }
+    .prompt {
+      margin-top: 10px;
+    }
+   
+    .submitWrap input[type="submit"] {
+      padding: 8px 35px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .boxSmall {
+  
+      padding: 40px 50px;
+  
+    }
+  }
+  
+  
+  

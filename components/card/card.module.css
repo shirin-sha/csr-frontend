@@ -1,0 +1,165 @@
+.cardDiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 60px;
+}
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  /* width: 40%; */
+  border-radius: 1px;
+  /* margin-bottom: 50px; */
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+.eventTitle {
+  background-color: #525251;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  /* color: white; */
+}
+.tag {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 4px;
+  right: 20px;
+  top: 30%;
+  padding: 0;
+  font-weight: bolder;
+  font-size: x-small;
+}
+.notificationDot {
+  position: absolute;
+  border-radius: 20px;
+  display: flex;
+  top: 8px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 69, 69);
+  transition: .5s ease;
+  
+}
+
+.eventTitle p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.container {
+  padding: 30px 20px;
+  color: #525251;
+  display: flex;
+  background-color: white;
+  min-height: 155px;
+  max-height: 155px;
+  overflow: hidden;
+}
+.conBody {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: #525251;
+  font-weight: 500;
+}
+.imgDiv {
+  width: 30%;
+  margin-right: 10px;
+}
+.imgDivGrey {
+  filter: grayscale(100%);
+}
+.cardButtondiv {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid #d9d9d9;
+  background-color: white;
+}
+.closedStatus {
+  color: red;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.activeStatus {
+  color: green;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.cardbutton {
+  border: none;
+  background: none;
+  padding: 16px 37px;
+  font-size: 16px;
+  color: #434343;
+  cursor: pointer;
+  font-weight: 500;
+}
+.cardbutton:hover {
+  color: #9e8959;
+}
+.singleLine {
+  display: flex;
+}
+.eventlabel {
+  width: 45%;
+  padding-right: 2%;
+  font-size: 14px;
+}
+.eventcardButtondiv {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #d9d9d9;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.eventcardButtondiv:hover {
+  color: #9e8959;
+}
+.colonspace {
+  padding-left: 6px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  width: 147px;
+}
+
+@media screen and (max-width: 1100px) {
+  .colonspace {
+    font-size: 14px;
+  }
+  .eventlabel {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .singleLine {
+    font-size: 16px;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+}

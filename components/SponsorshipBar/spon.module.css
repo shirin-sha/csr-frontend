@@ -1,0 +1,203 @@
+
+.btn {
+  width: max-content;
+  height: 45px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 0.9rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s ease-in;
+}
+
+.btn:hover {
+
+
+  background: #9e8959;
+}
+.btn:focus {
+  background: #9e8959;
+}
+.btn_sm {
+  width: 74px;
+  height: 27px;
+  font-family: "Poppins";
+
+  font-size: 0.8rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 2px 8px 2px 8px;
+  transition: 0.4s;
+}
+
+.btn_sm:hover {
+  background: #9e8959;
+}
+
+.container {
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .numberInput::placeholder {
+  color: red;
+} */
+@media only screen and (max-width: 650px) {
+  .sidebarCover {
+    width: 0;
+  }
+}
+
+.sponsorshipForm {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 3rem;
+  /* padding: 20px 50px; */
+  width: 100%;
+
+
+}
+
+.numberInput[type="number"]::-webkit-outer-spin-button,
+.numberInput[type="number"]::-webkit-inner-spin-button {
+
+
+  -webkit-appearance: none;
+}
+.numberInputErr[type="number"]::-webkit-outer-spin-button,
+.numberInputErr[type="number"]::-webkit-inner-spin-button {
+
+
+  -webkit-appearance: none;
+}
+.errorMessage {
+  color: red;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.numberInput[type="number"] {
+  -moz-appearance: textfield;
+  width: 110px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px solid;
+  outline:  none;
+  margin-left: 20px;
+  font-family: "Poppins";
+}
+.numberInputErr[type="number"] {
+  -moz-appearance: textfield;
+  width: 100px;
+  height: 30px;
+  background-color: #d9d9d9;
+  padding-left: 10px;
+  border: 0px solid;
+  outline:  2px auto rgba(216, 32, 32, 0.719);
+  margin-left: 20px;
+  font-family: "Poppins";
+}
+.buttonGroup {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.singlebutton {
+  /* padding-top: 2rem; */
+  display: flex;
+  justify-content: center;
+}
+.buttonGroup2 {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* radio-button */
+
+.radioClassWrapper {
+
+  display: flex;
+}
+
+.radioButtonWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.radioButton {
+  accent-color: #9e8959;
+  border: 2px;
+  width: 18px;
+  height: 1.2em;
+  margin: 0px 5px;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxLabel {
+  padding-left: 10px;
+}
+
+.radioLabel {
+  margin-right: 10px;
+  text-align: start;
+}
+
+.checkBox {
+  accent-color: #9e8959;
+
+  border: 0px;
+  width: 20px;
+  height: 1.5em;
+  border-radius: 1px;
+  /* margin: 0 !important; */
+  margin-left: 5px;
+}
+
+.mySponsorshipCard {
+  margin-top: 20px;
+}
+
+.amountBar {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #9e8959;
+  margin-top: 20px;
+  padding: 17px 15px;
+}
+
+@media only screen and (max-width: 475px) {
+  .amountBar {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+

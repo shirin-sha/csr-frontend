@@ -1,0 +1,36 @@
+.accordion{
+    max-width: 800px;
+
+}
+.contentBox{
+    position: relative;
+    margin: 10px 20px;
+}
+.label{
+    position: relative;
+    padding: 10px;
+    cursor:pointer
+}
+.label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right:20px;
+    transform:translateY(-50%);
+    font-size:1.5em;
+}
+.content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.active .content{
+    height: 150px;
+
+}
+.active .label::before
+{
+    content: '-';
+}

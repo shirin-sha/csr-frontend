@@ -1,0 +1,29 @@
+.headingContainer{
+width: 100%;
+display: flex;
+justify-content: center;
+padding-top: 50px;
+}
+
+.heading{
+    font-size: 24px;
+    position: relative;
+    
+}
+.heading::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    left: 1%;
+    bottom: 0;
+    width: 100%;
+    height: 0px;  
+}
+.notFoundText{
+    margin: auto;
+}
+.textContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}

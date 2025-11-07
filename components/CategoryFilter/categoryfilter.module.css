@@ -1,0 +1,138 @@
+.categoryContainer {
+  width: 15%;
+  padding: 0;
+  position: fixed;
+  padding-left: 1.8rem;
+  border: 0px 0px 2px 2px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13);
+  left: 108px;
+  top: 84px;
+  padding-top: 20px;
+  z-index: 99;
+  height: 100%;
+  background-color: white;
+}
+.categoryContainerRes {
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  padding-left: 0.8rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13);
+  top: 0;
+  z-index: 99;
+  height: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryContainer {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .categoryContainerRes {
+    display: none;
+  }
+}
+.categoryTitle {
+  font-size: medium;
+  text-align: start;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 26px;
+}
+
+.categories {
+  /* padding-left: 12px; */
+}
+
+.inputList {
+  list-style-type: decimal;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  padding-top: 1rem;
+}
+
+/* category bar */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #525251;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #525251;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 1000px){
+  .container {
+    font-size: 10px;
+  }
+  .checkmark {
+    width:20px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .categoryContainer {
+    left: 0;  
+  }
+
+}

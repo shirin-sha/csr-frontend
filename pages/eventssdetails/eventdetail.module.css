@@ -1,0 +1,103 @@
+.signinDiv{
+    background-color: #525251;
+    color:white
+}
+.eventDetails{
+    padding: 30px 50px;
+    margin-left: 108px;
+    /* width: 100%; */
+    width: calc(100% - 108px);
+    box-sizing: border-box;
+
+}
+.innerDiv{
+    width: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    padding-top: 41px;
+}
+.labelDiv{
+    width: 25%;
+    font-weight: 500;
+}
+.spanContent{
+    padding-left: 17px;
+    color: rgba(0, 0, 0, 0.58);
+}
+.docList{
+    padding-left: 17px;
+    color: #9e8959;
+}
+.eventTitle{
+text-align: center;
+/* padding-bottom: 60px; */
+font-weight: 500;
+position: relative;
+}
+.eventTitle::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    left: 44%;
+    bottom: 0;
+    width: 12%;
+    height: 0px;
+}
+.eventName{
+    font-weight: 500;
+    padding-top: 35px;
+    position: relative;
+
+}
+.eventName::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    left: 0%;
+    bottom: 0;
+    width: 11%;
+    height: 0px;  
+}
+.documentSection{
+    display: flex;
+}
+.singleLineFlex{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.documentButton{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.viewButton{
+    width: 60px;
+    height: 26px;
+    background-color: #525251;
+    border: none;
+    color: white;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+
+.viewQuatation{
+    display: flex;
+    justify-content: end;
+    margin-top: 53px;
+}
+.quatationBtn{
+    border: none;
+    background: #525151;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+}
+@media screen and (max-width: 650px){
+.eventDetails {
+    margin-left: 0;
+    width: 100%;
+}
+}

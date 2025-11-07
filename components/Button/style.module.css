@@ -1,0 +1,73 @@
+.btn {
+  width: max-content;
+  min-width: 135px;
+  height: 45px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 0.9rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+.btnact{
+  width: max-content;
+  min-width: 135px;
+  height: 45px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 0.9rem;
+  line-height: 24px;
+  background: #9e8959;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+
+}
+.btnact:hover{
+  background: #9e8959;
+}
+.btn:hover {
+
+
+  background: #9e8959;
+}
+.btn:focus {
+  background: #9e8959;
+}
+.btn_sm {
+ min-width: 74px;
+  height: 27px;
+  font-family: "Poppins";
+font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 24px;
+  background: #525251;
+  border-radius: 3px;
+  border-color: #525251;
+  box-shadow: 0 0 0 0;
+  color: white;
+  border: none;
+  padding: 0;
+  padding: 2px 8px 2px 8px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn_sm:hover {
+  background: #9e8959;
+}
+

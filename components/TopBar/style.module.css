@@ -1,0 +1,346 @@
+.topBar {
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+.leftDiv {
+  width: 70%;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+.search {
+  width: 300px;
+  height: 47px;
+  padding-left: 1rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    background-color: transparent;
+  
+}
+.activebtn{
+  
+  background-color: #9e8959;
+  width: max-content;
+    min-width: 135px;
+    height: 45px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    font-size: 0.9rem;
+    line-height: 24px;
+  
+    border-radius: 3px;
+    border-color: #525251;
+    box-shadow: 0 0 0 0;
+    color: white;
+    border: none;
+    padding: 0;
+    padding: 10px 25px 10px 25px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.allButtons{
+  width: max-content;
+    min-width: 135px;
+    height: 45px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    font-size: 0.9rem;
+    line-height: 24px;
+    background: #525251;
+    border-radius: 3px;
+    border-color: #525251;
+    box-shadow: 0 0 0 0;
+    color: white;
+    border: none;
+    padding: 0;
+    padding: 10px 25px 10px 25px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.allButtons:hover{
+  background-color: #9e8959;
+}
+.search:focus-within {
+  outline: none;
+  border-radius: 5px;
+  border-width: 0.2px;
+  border-color: #14141486;
+}
+.myProject {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+}
+.myProjectSponsor{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+}
+  .sortDiv{
+    display: none;
+  }
+.title {
+  padding-bottom: 20px;
+}
+.smallView{
+  display: none;
+}
+.respleftDiv{
+  width: 70%;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+.responsBtnDiv{
+display: none;
+}
+.categoryContainer{
+  display: none;
+}
+@media only screen and (max-width: 650px){
+/* category */
+.categoryContainer {
+  display: block;
+  width: 100%;
+  padding: 0;
+ 
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  border: 0px 0px 2px 2px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13);
+  left: 0px;
+  top: 196px;
+  padding-top: 20px;
+  z-index: 99;
+  /* height: 100%; */
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 3px
+}
+
+.categories{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.inputList {
+  list-style-type: decimal;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  padding-top: 1rem;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #525251;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #525251;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+}
+@media only screen and (max-width: 580px) {
+  .topBar {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchiconWidth{
+    width: 100%;
+  }
+  .orgButtons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .orgTitle{
+    width: 100%;
+  }
+  .smallView{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px
+  }
+  .largeView{
+display: none;
+  }
+  .leftDiv {
+    width: 100%;
+    display: block;
+    
+  }
+  .respleftDiv{
+/* display: flex; */
+justify-content: space-between;
+padding-bottom: 20px;
+gap: 10px;
+
+width: 100%;
+display: none;
+  }
+
+  .responsBtnDiv{
+    display: flex;
+justify-content: space-between;
+padding-bottom: 20px;
+gap: 10px;
+
+width: 100%;
+  }
+  .search {
+    width: 100%;
+    height: 47px;
+    padding-left: 2rem;
+    border-radius: 2px;
+    border-width: 0.2px;
+    border-color: #14141486;
+    position:relative
+  }
+  .buttonStyle{
+    min-width: 120px
+  }
+  .searchIcon{
+    /* position: absolute; */
+    top: 4px;
+    padding: 10px;
+    color: rgba(67, 67, 67, 0.66);
+  }
+  .myProject {
+    display: none;
+    /* display: flex; */
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+  }
+  .myProjectSponsor{
+    /* display: none; */
+    /* display: flex; */
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+  }
+  .sortDiv{
+    background-color: white;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  
+  .allButtons{
+  
+    min-width:max-content;
+    width: 120px;
+  }
+.activeQueBtn{
+
+    width: 143px;
+      min-width: 135px;
+      height: 45px;
+     
+      font-weight: bolder;
+      font-size: 0.9rem;
+      line-height: 24px;
+      background: #525251;
+      border-radius: 3px;
+      border-color: #525251;
+      box-shadow: 0 0 0 0;
+      color: white;
+      border: none;
+      padding: 0;
+      padding: 10px 25px 10px 25px;
+      transition: 0.5s ease-in;
+      cursor: pointer;
+  
+}
+.activeQueClicked{
+  
+  background-color: #9e8959;
+  width:143px;
+    min-width: 135px;
+    height: 45px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    font-size: 0.9rem;
+    line-height: 24px;
+  
+    border-radius: 3px;
+    border-color: #525251;
+    box-shadow: 0 0 0 0;
+    color: white;
+    border: none;
+    padding: 0;
+    padding: 10px 25px 10px 25px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+
+  .activebtn{
+
+  
+
+    /* min-width: max-content; */
+    width: 110px;
+
+
+  }
+}

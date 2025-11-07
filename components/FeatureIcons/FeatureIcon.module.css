@@ -1,0 +1,86 @@
+.featureMain{
+    /* display: flex; */
+    /* background-color: #EDE9E0; */
+    width: 100%;
+    /* justify-content: space-evenly; */
+    /* padding: 60px; */
+  /* margin-top: 120px; */
+    /* height: 200px; */
+    padding-top: 68px;
+    text-align: center;
+    padding-bottom: 141px;
+}
+.iconHead{
+    display: flex;
+    align-items: center;
+}
+.event{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+}
+.iconName{
+    padding-left: 10px;
+}
+/* .blurText{
+    color: rgba(0, 0, 0, 0.02);
+
+   
+   
+    margin-top: -55px;
+font-size: 50px;
+padding-left: 197px; */
+  
+/* } */
+/* .headDiv{
+    position: relative;
+} */
+.blur::before{
+    content: 'CATEGORIES';
+    position: absolute;
+    left: 209px;
+    top: -46px;
+    color: rgba(0, 0, 0, 0.02);
+    font-size: 82px;
+    /* color: rgba(0, 0, 0, 0.02); */
+}
+.blur{
+    position: relative;
+    margin-top: 110px;
+}
+@media only screen and (max-width: 1024px){
+    .blur::before{
+        font-size: 44px;
+        top: -16px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .blur::before{
+        font-size: 37px;
+        top: -11px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .featureMain{
+        padding-bottom: 49px;
+    }
+    .blur{
+text-align: center;
+font-size: 22px;
+margin-top: 60px;
+}
+
+.blur::before{
+content: 'CATEGORIES';
+position: absolute;
+left: 48px;
+top: -33px;
+color: rgba(0, 0, 0, 0.02);
+font-size: 42px;
+}
+.iconName{
+    font-size: 10px;
+}
+}

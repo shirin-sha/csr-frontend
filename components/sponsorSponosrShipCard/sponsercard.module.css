@@ -1,0 +1,22 @@
+.sponserCard{
+    box-shadow: 1px  4px 4px rgba(0, 0, 0, 0.25);
+    width: 433px;
+    height: 157px;
+    line-height: 3;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+
+.innerDiv{
+    width: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    padding-top: 41px;
+    padding: 30px 30px 20px 30px;
+}
+.bottomSection{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}

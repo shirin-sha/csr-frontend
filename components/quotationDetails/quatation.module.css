@@ -1,0 +1,219 @@
+.lineFlex{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.doclineFlex{
+    display: flex;
+    width: 77%;
+    
+}
+.content{
+    width: 50%
+}
+.docs{
+    color: #9e8959;
+    padding-left: 13px;
+}
+.signinDiv{
+    background-color: #525251;
+    color:white
+}
+.quatationDiv{
+    padding:  10px 65px;
+    margin-left: 108px;
+   
+    width: calc(100% - 108px);
+    box-sizing: border-box;
+}
+.heading{
+    font-size: 24px;
+    position: relative;
+}
+.heading::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    left: 1%;
+    bottom: 0;
+    width: 11%;
+    height: 0px;  
+}
+.box{
+    border: 1px solid;
+    margin-top: 33px;
+    padding: 33px;
+    border-radius: 12px;
+    padding: 33px;
+    border-color: rgba(0, 0, 0, 0.23);
+    line-height: 60px;
+    
+    background-color: white;
+}
+.rightSec{
+    padding-left: 13px;
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: 400;
+    font-size: 16px;
+}
+.rightSecBtn{
+    padding-left: 13px;
+    color: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    display: flex;
+    gap: 10px;
+   
+}
+.docSection{
+    display: flex;
+}
+.btndiv{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 8px;
+    
+}
+.btndivmobil{
+    display: none;
+}
+.qContent{
+    padding: 0 176px 0 120px; 
+}
+
+/* .qContent p{
+    font-weight: 400;
+    font-size: 16px;
+    
+} */
+.qContent label{
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 20px;
+   
+}
+.buttons{
+    border: none;
+    background: #525151;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 3px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.priceShow{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+@media screen and (max-width: 1150px){
+    .priceShow{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 900px){
+    .priceShow{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 790px){
+    .priceShow{
+        font-size: 17px;
+    }
+    .box{
+        padding: 33px 33px 33px 33px;
+    }
+}
+@media screen and (max-width: 750px){
+    .price{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px){
+    .quatationDiv{
+        /* display: flex; */
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    .lineFlex{
+        width: 100%;
+    }
+    .btndiv{
+        display: none;
+   
+    }
+    .btndivmobil{
+        display: flex;
+        justify-content: center;
+       
+        padding-top: 15px;
+        
+    }
+    .buttons{
+        margin-top: 4px;
+        font-size: 14px;
+        width: 120px;
+    }
+    .box{
+        line-height: 42px;
+        font-size: 12px;
+        padding: 33px 33px 33px 33px;
+    }
+    .qContent{
+        padding: 0;
+      
+    }
+    .rightSecBtn{
+       display: inline;
+       width: 60%;
+    }
+    .doclineFlex{
+        align-items: baseline;
+        width: 100%;
+    }
+    .docbtns{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobilebtn{
+        width: 100%;
+       
+        height: 45px;
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 0.9rem;
+        line-height: 24px;
+        background: #525251;
+        border-radius: 3px;
+        border-color: #525251;
+        box-shadow: 0 0 0 0;
+        color: white;
+        border: none;
+        padding: 0;
+        padding: 10px 25px 10px 25px;
+        transition: 0.5s ease-in;
+        cursor: pointer;
+      }
+}
+
+@media screen and (max-width: 375px){
+.box{
+    padding: 17px;
+}
+.qContent label{
+    font-size: 16px;
+    width: 40%;
+}
+
+}
+    @media screen and (max-width: 347px){
+.box{
+    padding: 30px 20px 20px 20px;
+}
+    }

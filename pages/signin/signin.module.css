@@ -1,0 +1,241 @@
+.childMargin{
+  margin-left: 108px;
+    width: 100%;
+    width: calc(100% - 108px);
+    box-sizing: border-box;
+}
+.signinDiv{
+    background-color: #525251;
+    color:white;
+   
+}
+.searchBox{
+    position :relative;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+border-radius: 4px;
+padding: 6px;
+padding-left: 38px;
+}
+.searchIcon{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+.flexDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 49px 80px 49px 73px;
+    /* margin-left: 112px; */
+   
+
+
+}
+.btnDiv{
+    margin-top: 19px;
+}
+.createBtn{
+    border: none;
+    background-color: #525251;
+    padding: 12px;
+    color: white;
+    border-radius: 4px;
+}
+.createBtn:hover{
+    background-color: #9e8959;
+
+}
+/* popup */
+
+.createEvent{
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 48px 70px;
+    border-radius: 16px;
+    border-top: 6px solid #9e8959;
+}
+.newEventTitle{
+    text-align: center;
+    padding-bottom: 27px;
+}
+.textLabel{
+    display: flex;
+    justify-content: space-between;
+}
+.textspan{
+    width: 40%;
+    padding-right: 20px;
+    font-size: 15px;
+  }  
+  .inputtext{   
+    width: 60%;
+    background: #f5f5f5;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    margin-top: 4px;
+    padding: 8px;
+    margin-right: 20px;
+  } 
+  .formDiv{
+    display: flex;
+    justify-content: center;
+    padding: 49px 78px 49px 49px;
+  }
+  .flexMain{
+    display: flex;
+  }
+  .flexMain input[type="text"]::placeholder,
+  .flexMain input[type="date"]::placeholder,
+  .flexMain input[type="file"]::placeholder {
+  color: #d9d9d9;
+}
+.flexContent1{
+    width: 60%;
+}
+.textOnlyInput{   
+    
+    background: #f5f5f5;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    margin-top: 4px;
+    padding: 8px;
+  } 
+.textOnly{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 40%;
+}
+.browseButtonWrap {
+    display: flex;
+    justify-content: right;
+    background: #f5f5f5;
+    position: relative;
+    padding: 6px 4px;
+    width: 92%;
+    margin-top: 4px;
+    padding: 8px;
+    
+  }
+  .fileDiv{
+    width: 40.5%;
+  }
+  .browseButtonWrap::after{
+    position: absolute;
+    right: 0px;
+    top:50%;
+    transform: translate(0%, -50%);
+  content: "Browse";
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #9e8959;
+  outline: none;
+  border: none;
+  padding: 6px 4px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: 0;
+  pointer-events: none;
+  
+  }
+  .customFileInput {
+    color: transparent;
+  }
+  
+  .customFileInput::-webkit-file-upload-button, 
+   .customFileInput::file-selector-button{
+    visibility: hidden;
+  }
+  .payAndPublish {
+    background-color: #9e8959;
+    cursor: pointer;
+    color: #fff;
+    width: 76%;
+  
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #9e8959;
+  }
+  .payAndPublish:hover {
+    background-color: #525251;
+    border: 1px solid #525251;
+  }
+  .buttonFlex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .cardDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 60px;
+    margin-top: 48px;
+    padding: 0 34px 0 34px;
+  }
+  .singleLine{
+    display: flex;
+  }
+  .eventlabel{
+    width: 101px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  @media screen and (max-width: 650px){
+    .flexDiv{
+      flex-direction: column;
+      width: auto;
+      left: 30px;
+    }
+    .childMargin{
+      margin-left: 0;
+    }
+/* form */
+     .flexMain{
+      flex-direction: column;
+     }
+  .flexContent1{
+    width: 100%;
+  }
+  .textLabel{
+    flex-direction: column;
+  }
+  .inputtext{
+    width: 100%;
+  }
+  .textOnly{
+    width: 100%;
+    padding-left: 0;
+  }
+  .browseButtonWrap{
+    width: 100%;
+  }
+  .createEvent{
+    top: 255px;
+    left: 37px;
+    padding: 48px 18px;
+  }
+  .buttonFlex{
+    justify-content: center;
+}
+.cardDiv{
+  background: white;
+  top: 249px;
+    left: 0;
+}
+.card{
+  width: 100%;
+}
+  }
+  

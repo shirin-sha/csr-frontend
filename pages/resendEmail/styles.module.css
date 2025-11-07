@@ -1,0 +1,146 @@
+.forgotPasswordWrap {
+  padding: 80px 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newHeading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.newHeadingInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newHeading h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.newHeading h2 {
+  border-top: #9e8959 2px solid;
+  margin: 0;
+  color: #fff;
+  width: 80%;
+}
+.prompt {
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.49);
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+.formContent {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.emailWrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.emailWrap label {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.78);
+  margin-left: 6px;
+}
+.emailWrap input[type="email"] {
+  box-shadow: 0 0 2pt 0.2pt #D3D3D3;
+
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  border-radius: 1px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 9px;
+}
+
+
+.submitWrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.submitWrap input{
+  all:unset;
+  padding: 5px 40px;
+  color: #fff;
+  background: #525251;
+  outline: none;
+  border: 1px solid #525251;
+  border-radius: 4px !important;
+  cursor: pointer;
+  font-weight: 500;
+  transition: .5s ease;
+}
+.submitWrap input:hover{
+  background: #525251;
+ background:  #9e8959;
+ border: 1px solid #52525141;
+ transform: scale(1.01);
+
+}
+/* .submitButton {
+ 
+  padding: 10px 40px;
+  color: #fff;
+  background: #525251;
+  outline: none;
+  border: 1px solid #525251;
+  border-radius: 4px !important;
+  cursor: pointer;
+  font-weight: 500;
+  
+} */
+.errmsg {
+  text-align: left;
+  font-size: 10px;
+  color: red;
+  padding: 6px 25px;
+}
+@media screen and (max-width: 425px) {
+  .forgotPasswordWrap {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .prompt {
+    font-size: .8rem;
+    text-align: center;
+
+    margin-top: 30px;
+  }
+  .emailWrap label {
+    font-size: 14px;
+  }
+  .emailWrap input[type="email"] {
+    font-size: 12px;
+  }
+  .emailWrap input[type="email"]::placeholder {
+    font-size: 14px;
+  }
+  .submitWrap input{
+    height: 20px;
+    font-size:small;
+  }
+}
+@media screen and (max-width: 362px) {
+  .forgotPasswordWrap {
+    padding: 50px 28px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+
+}
+.daySelector{
+    background: #f5f5f5;
+    border: none;
+    border-right: 1px solid #D9D9D9;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.15);;
+   
+}
+/* .monthSelectorWrap,.yearSelectorWrap,.daySelectorWrap{
+    width: 33.3%;
+} */
+
+.monthSelector{
+    background: #f5f5f5;
+    border: none;
+    border-right: 1px solid #D9D9D9;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.15);
+    /* width: 25%; */
+}
+.yearSelector{
+    background: #f5f5f5;
+    border: none;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.15);
+    /* border-right: 1px solid grey; */
+}

@@ -1,0 +1,97 @@
+.container {
+  padding: 1rem .5rem 0rem 1rem;
+  height: min-content;
+}
+
+.switchButton{
+  display: flex;
+  padding: 0 11px;
+    margin-top: -74px;
+}
+.sponsorBtn{
+  width: 50%;
+    padding: 12px;
+    border-radius: 10px 10px 0 0;
+    background: #ede7e7;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+.sponorSwitch{
+  display: flex;
+  padding: 0 11px;
+  margin-top: -47px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.sponsorHead{
+  width: 50%;
+    padding: 12px;
+    border-radius: 10px 10px 0 0;
+    background: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    margin-top: -42px
+}
+.sponsorShipBar{
+  padding-left: 5rem;
+
+}
+.my_sponsor{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.card_container {
+ 
+background-color:white;
+  padding: 3rem 1rem 2rem 8rem;
+
+}
+.noContent{
+text-align: center;
+color: red;
+}
+.card_container_applicant {
+background-color: white;
+  padding: 2rem 5rem 0rem 8rem;
+}
+.card_container_applicant_q {
+
+  background-color: white;
+
+  padding: 2rem 5rem 0rem 8rem;
+}
+.heading {
+  padding-top: 30px;
+}
+.emptyQueue{
+  text-align: center;
+    padding-bottom: 25px;
+}
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 3rem .5rem 0rem .4rem;
+  }
+
+  .card_container {
+
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  .card_container_applicant {
+    width: 100%;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .card_container_applicant_q {
+    width: 100%;
+
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .sponsorShipBar{
+    padding-left: 1rem;
+  
+  }
+  .switchButton{
+    margin-top: -57px
+  }
+}

@@ -1,0 +1,266 @@
+.banner {
+  background: url("../../images/Faq.jpeg");
+  /* background-color: rgba(0, 0, 0, 0.47); */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-blend-mode: overlay;
+  background-position: center;
+  padding: 131px;
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 1028px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.find {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  text-align: center;
+
+  color: #9e8959;
+  font-weight: 408;
+  font-size: 21px;
+}
+/* .find::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid #525251;
+
+} */
+.quesAnswer {
+  text-align: center;
+  font-weight: 401;
+}
+.smallContent {
+  text-align: center;
+  padding-bottom: 21px;
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 16px;
+}
+.contentDiv {
+  padding-top: 70px;
+  /* padding-bottom: 70px; */
+}
+
+.anyQuestion {
+  /* text-align: center; */
+  padding-top: 100px;
+}
+.labelText{
+  display: flex;
+    flex-direction: column;
+}
+.sectionTitle {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 401;
+  padding-bottom: 7px;
+  text-align: left !important;
+}
+.findHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  width: 88%;
+  height: 2px;
+  bottom: 0;
+  left: 5%;
+  border-bottom: 2px solid #525251;
+}
+
+.description {
+  color: #202021;
+  padding-top: 24px;
+}
+.details {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.textbox {
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid #CCCCCC;
+  width: 301px;
+  margin-top: 8px;
+
+}
+.textarea {
+  width: 100%;
+  margin-top: 23px;
+  border-radius: 6px;
+  border: 1px solid #CCCCCC;
+  padding: 22px 20px
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.sentMessage {
+  /* background-color: #525251; */
+  color: white;
+    border: none;
+    padding: 15px 31px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #9e8959;
+    font-weight: 600;
+}
+.sentMessage:hover {
+  background-color: #525251;
+}
+.btnDiv {
+  text-align: center;
+  padding-top: 43px;
+}
+
+.faqImage {
+  position: relative;
+  width: 200px;
+}
+.successMsg{
+  text-align: center;
+  padding-top: 10px;
+  color: green;
+}
+.errMsg{
+  text-align: center;
+  padding-top: 12px;
+  color: red;
+}
+.errorMessage{
+color :red;
+font-size: 12px;
+}
+
+@media only screen and (max-width: 772px) {
+  .details {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .textbox {
+    padding: 14px 20px;
+    font-size: 11px;
+    margin-top: 7px;
+    width: 100%;
+  }
+  .btnDiv {
+    padding-top: 11px;
+  }
+  .sentMessage {
+    padding: 12px 20px;
+    font-size: 11px;
+  }
+  .btnDiv {
+    padding-top: 11px;
+  }
+  .anyQuestion {
+    text-align: center;
+  }
+  .quesAnswer{
+    font-size: 22px;
+  }
+  .smallContent{
+    font-size: 14px;
+  }
+  .find{
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .find {
+    font-size: 18px;
+  }
+  .quesAnswer {
+    font-size: 22px;
+  }
+  .smallContent {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 15px;
+  }
+  .anyQuestion {
+    padding-top: 36px;
+    text-align: center;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .details {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .textbox {
+    padding: 14px 20px;
+    font-size: 15px;
+    margin-top: 7px;
+    width: 100%;
+  }
+  .textarea {
+    margin-top: 7px;
+    font-size: 15px;
+  }
+  .btnDiv {
+    padding-top: 11px;
+  }
+  .sentMessage {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .navoverlay{
+    margin-bottom: -86px;
+  }
+}

@@ -1,0 +1,226 @@
+.Navbackground{
+    border-bottom: 3px solid #e8e9e9;
+}
+.newsDiv h4{
+    font-size: 22px;
+    line-height: 138%;
+    padding-top: 30px;
+    color: #202021;
+}
+.newsDiv p{
+    font-size: 18px;
+   
+    line-height: 30px;
+    padding: 15px 0 15px 0;
+}
+.navDiv{
+    border-bottom: 2px solid #cbcabc;
+}
+.recentnewsHead{
+    width: 70%;
+}
+.recentimage{
+    width: 30%;
+    height: 90px;
+    position: relative;
+}
+.heading{
+    font-size: 26px;
+    line-height: 138%;
+    padding-top: 30px;
+    padding-left: 110px;
+    
+    padding-bottom: 25px;
+}
+.flexMain{
+    display: flex;
+    padding: 13px 110px;
+}
+.imagewrapdiv{
+    position: relative;
+    width: 100%;
+    
+    aspect-ratio: 2/0.9;
+    object-fit: cover;
+}
+.imagewrapdiv img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.newsDiv{
+width: 70%;
+margin-right: 40px;
+}
+.news{
+    display: flex;
+    
+    align-items: center;
+    border-bottom: 1px solid rgba(82, 82, 81, 0.5);
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+   
+}
+.dateBox{
+    background-color: #525251;
+    position: absolute;
+    bottom: 7px;
+    left: 94px;
+    width: 104px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.datespan{
+    background-color: #9e8959;
+    color: white;
+    width: 87px;
+    height: 28px;
+    text-align: center;
+    }
+.recentPost{
+    width: 30%;
+}
+.recentPost p{
+    font-weight: 500;
+font-size: 18px;
+overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    height: 57px;
+    -webkit-box-orient: vertical;
+    line-height: 26px;
+padding-left: 20px;
+}
+.recentPost h4{
+    font-size: 22px;
+    padding-bottom: 24px; 
+    color: #000000;
+}
+/* .newsHead{
+    padding-left: 20px;
+} */
+.socialMedia{
+    display: flex;
+    align-items: center;
+    padding: 50px 0 40px 0px;
+    /* justify-content: space-between; */
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-right: 20px;height: 115px;
+    justify-content: space-between;
+    height: 140px;
+
+}
+.circleIcon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #525151;
+    color: white;
+    font-size: 20px;
+}
+.circleIcon:hover{
+    color: #9e8959;
+}
+.iconSpacing{
+    
+    position: absolute;
+}
+.datediv{
+    font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+padding-left: 20px;
+}
+.newimageAndpost{
+    display: flex;
+}
+.imagebanner{
+    width:60%
+}
+.recentPostdiv{
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+    .dateBox{
+        bottom: 0;
+    left: 0;
+    }
+    .heading{
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .newsDiv p{
+        font-size: 16px;
+        font-weight: 300;
+        color: #202021;
+    }
+    .flexMain{
+        padding: 45px 22px 20px 22px;
+        flex-direction: column;
+    }
+    .newsDiv{
+        width: 100%;
+        padding: 0px 0 15px 0;
+    }
+    .socialMedia{
+        flex-direction: column;
+    }
+    .newsDiv h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+       
+    }
+    .icons{
+        display: none;
+        /* flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center; */
+    }
+    .recentPost{
+        width: 100%;
+    }
+    .recentPost h4{
+        font-weight: 600;
+font-size: 24px;
+line-height: 25px;
+    }
+    .recentPost p{
+        font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+    }
+    .Navbackground{
+        background-color: #525251;
+        visibility: visible;
+    }
+    .imagewrapdiv{
+        width: unset;
+        margin: 20px;
+    }
+    .imagewrapdiv img{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+}

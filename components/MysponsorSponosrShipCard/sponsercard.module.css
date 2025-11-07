@@ -1,0 +1,40 @@
+.sponserCard{
+    box-shadow: 1px  4px 4px rgba(0, 0, 0, 0.25);
+    width: 433px;
+    height: 200px;
+    line-height: 3;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+
+.innerDiv{
+    width: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    padding-top: 41px;
+    padding: 30px 30px 20px 30px;
+}
+.bottomSection{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.viewButton2 {
+    width: 79px;
+    height: 32px;
+    background-color: #525251;
+    border: none;
+    color: white;
+    margin-top: 12px;
+    border-radius: 2px;
+  }
+  .viewButton2:hover {
+    background-color: #9e8959;
+  }
+
+  .buttonGroup2 {
+  
+    display: flex;
+    justify-content: space-between;
+  }
