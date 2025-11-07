@@ -1,5 +1,11 @@
 
-import algoliasearch from 'algoliasearch'
+import algoliasearch from 'algoliasearch';
 
+const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID;
+const algoliaSearchKey = process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY;
 
-export const searchClient = algoliasearch('5ZF2PO58F1', 'e73e4fd3526d54c77305cb3981645d79')
+if (!algoliaAppId || !algoliaSearchKey) {
+  throw new Error('Missing Algolia environment variables. Set NEXT_PUBLIC_ALGOLIA_APP_ID and NEXT_PUBLIC_ALGOLIA_SEARCH_KEY.');
+}
+
+export const searchClient = algoliasearch(algoliaAppId, algoliaSearchKey);

@@ -81,6 +81,27 @@ ChatRow.propTypes = {
 	// eslint-disable-next-line react/require-default-props
 	onClick: PropTypes.func,
 }
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+};
+
+const missingFirebaseConfigKeys = Object.entries(firebaseConfig)
+  .filter(([, value]) => !value)
+  .map(([key]) => key);
+
+if (missingFirebaseConfigKeys.length > 0) {
+  throw new Error(`Missing Firebase environment variables: ${missingFirebaseConfigKeys.join(', ')}`);
+}
+
+const app = initializeApp(firebaseConfig, 'loop');
+const db = getFirestore(app);
+
 const ChatUI = ({ chatRow, setFilterChat, filterChat }) => {
 	// sortby states
 	const [sortByClicked, setSortByClicked] = useState(false)
@@ -113,17 +134,6 @@ const ChatUI = ({ chatRow, setFilterChat, filterChat }) => {
 	const messageEnd = useRef()
 	const userId = userData.userId
 	const router = useRouter()
-	const firebaseConfig = {
-		apiKey: "AIzaSyBKndfcHjztZSEvogA_wie-MwGXfWHi7Vg",
-		authDomain: "loop-bd0eb.firebaseapp.com",
-		projectId: "loop-bd0eb",
-		storageBucket: "loop-bd0eb.appspot.com",
-		messagingSenderId: "3374968612",
-		appId: "1:3374968612:web:6f25eea17042065c000db1",
-		measurementId: "G-L7WEDNPBQG"
-	};
-	const app = initializeApp(firebaseConfig, 'loop');
-	const db = getFirestore(app);
 	//useefects
 
 	useEffect(() => {

@@ -19,7 +19,13 @@ export class MapContainer extends Component {
     }
 }
 
-//development purpose api - this must be replaced
+const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+if (!googleMapsApiKey) {
+    // eslint-disable-next-line no-console
+    console.warn('Missing NEXT_PUBLIC_GOOGLE_MAPS_API_KEY environment variable. Google Map will not load.');
+}
+
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo")
-})(MapContainer)
+    apiKey: googleMapsApiKey
+})(MapContainer);
