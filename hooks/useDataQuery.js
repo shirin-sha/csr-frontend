@@ -2,9 +2,9 @@ import axios from "axios";
 import useSWR from "swr";
 import { useRouter } from "next/router";
 
-// export const fetcher = async (route, datas = {}, header={}}) => {
-
-export const baseUrl = 'http://localhost:8000' //"https://admin.csrkuwait.com"; //'https://admin.csrkuwait.com' //'http://localhost:8000'
+// Prefer pulling the API URL from env so prod/stage can override easily.
+export const baseUrl =
+  process.env.NEXT_PUBLIC_API_BASE_URL;
 
 export const fetcher = async ({ key, data = {}, header = {} }) => {
   console.log("fetcher func");
